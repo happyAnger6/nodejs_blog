@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page">
+    <!-- ==== START MASTHEAD ==== -->
+    {{> header }}
+    <!-- end masthead -->
+
+    <div class="container clearfix">
+        <!-- ==== START MAIN ==== -->
+        <main role="main">
+            {{#each posts }}
+                <section class="post">
+                    <h1>{{ title }}</h1>
+
+                    <img src="img/gettyvilla.jpg" width="600" height="365" alt="" class="post-photo-full" />
+
+                    <div class="post-blurb">
+                        <p>{{{ truncate content }}} </p>
+                    </div>
+
+                    <div class="row">
+                        <a href="/post/details/{{title}}">阅 读 全 文</a>
+                    </div>
+
+                    <footer class="footer">
+                        <p class="post-footer">发表于<a href="#">{{author}}</a> 时间<time datetime="{{publish_date}}" class="pubdate">{{publish_date}}</time></p>
+                    </footer>
+
+                </section>
+            {{/each}}
+
+            <nav role="navigation">
+                <ol class="pagination">
+                    <li>1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6 &hellip;</a></li>
+                    <li><a href="#" class="more">Next</a></li>
+                </ol>
+            </nav>
+        </main>
+        <!-- end main -->
+
+        <!-- ==== START SIDEBAR ==== -->
+        <div class="sidebar">
+            <article class="about">
+                <h2>About Me</h2>
+
+                <img src="img/about-me.jpg" width="270" height="162" alt="" />
+
+                <p>My name is Eleina Shinn. Exploring the unknown and learning about our planet is what brings me the most pleasure. I enjoy foreign cuisine, culture and discovering social design and architecture. During the last five years I traveled to over 20 countries on 4 continents, often with just my backpack and a map in hand.</p>
+            </article>
+
+            <div class="mod">
+                <h2>My Travels</h2>
+                <img src="img/map.png" width="298" height="145" alt="" class="map" />
+            </div>
+
+            <aside class="mod">
+                <h2>Popular Posts</h2>
+
+                <ul class="links">
+                    <li><a href="#" class="more">The City Named After Queen Victoria</a></li>
+                    <li><a href="#" class="more">Heaven on Earth? Let's Have Dinner in Paris</a></li>
+                    <li><a href="#" class="more">Enjoying Strauss at the Volksoper in Vienna</a></li>
+                </ul>
+            </aside>
+
+            <aside class="mod">
+                <h2>Recently Shared</h2>
+
+                <ul class="links">
+                    <li><a href="#" class="more">Heaven on Earth? Let's Have Dinner in Paris</a></li>
+                    <li><a href="#" class="more">Experiencing Ramadan in Morocco</a></li>
+                    <li><a href="#" class="more">Octoberfest in Munich: The Party for The King's Daughter</a></li>
+                </ul>
+            </aside>
+        </div>
+        <!-- end sidebar -->
+    </div>
+    <!-- end container -->
+
+    {{> footer }}
+</div> <!-- end page -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/third_part/jquery/jquery-3.2.1.min.js"></script>
+</body>
+</html>
