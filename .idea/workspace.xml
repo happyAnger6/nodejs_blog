@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6a296c-1775-431d-9ae7-2d29e4bd6fcf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/about-me.jpg" afterPath="$PROJECT_DIR$/public/images/about-me.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/ape.png" afterPath="$PROJECT_DIR$/public/images/ape.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/contra.png" afterPath="$PROJECT_DIR$/public/images/contra.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/csdn.png" afterPath="$PROJECT_DIR$/public/images/csdn.png" />
@@ -108,11 +109,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/lock.png" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/lock.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/refresh.png" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/refresh.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/spinner.gif" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/images/spinner.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nodejs_blog.iml" afterPath="$PROJECT_DIR$/.idea/nodejs_blog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/post.js" afterPath="$PROJECT_DIR$/lib/post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.js" afterPath="$PROJECT_DIR$/models/post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/handlebars" afterPath="$PROJECT_DIR$/node_modules/.bin/handlebars" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" />
@@ -450,6 +457,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/editor_iequirks.css" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/editor_iequirks.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/readme.md" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/skins/moono-lisa/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/ckeditor/styles.js" afterPath="$PROJECT_DIR$/public/third_part/ckeditor/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/third_part/font-awesome/fonts/fontawesome-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/third_part/jquery/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/public/third_part/jquery/jquery-3.2.1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/post.js" afterPath="$PROJECT_DIR$/routes/post.js" />
@@ -458,7 +468,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/one_post.hbs" afterPath="$PROJECT_DIR$/views/one_post.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/footer.hbs" afterPath="$PROJECT_DIR$/views/partials/footer.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.hbs" afterPath="$PROJECT_DIR$/views/partials/header.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/sidebar.hbs" afterPath="$PROJECT_DIR$/views/partials/sidebar.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/postedit.hbs" afterPath="$PROJECT_DIR$/views/postedit.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/postpage.hbs" afterPath="$PROJECT_DIR$/views/postpage.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -475,7 +487,7 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
+            <state relative-caret-position="870">
               <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding />
             </state>
@@ -512,7 +524,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/post.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
@@ -532,11 +544,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/partials/header.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+            <state relative-caret-position="297">
+              <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -562,6 +574,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -578,11 +600,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/javascripts/html5shiv.js" />
-        <option value="$PROJECT_DIR$/views/partials/header.hbs" />
         <option value="$PROJECT_DIR$/views/postedit.hbs" />
         <option value="$PROJECT_DIR$/views/partials/footer.hbs" />
         <option value="$PROJECT_DIR$/views/one_post.hbs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/partials/siderbar.hbs" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/models/post.js" />
@@ -592,6 +612,8 @@
         <option value="$PROJECT_DIR$/views/partials/sidebar.hbs" />
         <option value="$PROJECT_DIR$/views/postpage.hbs" />
         <option value="$PROJECT_DIR$/routes/post.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/partials/header.hbs" />
       </list>
     </option>
   </component>
@@ -723,12 +745,12 @@
       <workItem from="1504873508043" duration="4728000" />
       <workItem from="1505012227491" duration="6403000" />
       <workItem from="1505034906817" duration="14188000" />
-      <workItem from="1505138155205" duration="2543000" />
+      <workItem from="1505138155205" duration="3797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45213000" />
+    <option name="totallyTimeSpent" value="46467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1039,14 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1067,14 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
           <caret line="161" column="17" lean-forward="false" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1127,14 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1147,6 +1145,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="83" column="130" lean-forward="false" selection-start-line="83" selection-start-column="130" selection-end-line="83" selection-end-column="130" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding />
         </state>
       </provider>

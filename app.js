@@ -21,6 +21,7 @@ hbs.registerHelper('truncate', function(content){
 });
 
 var app = express();
+app.listen(80);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
