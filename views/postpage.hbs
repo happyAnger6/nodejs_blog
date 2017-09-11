@@ -36,7 +36,7 @@
                     </div>
 
                     <footer class="footer">
-                        <p class="post-footer">{{author}}<a href="#"> 发表于:</a>  {{ publish_date }}</p>
+                        <p class="post-footer">发表于<a href="#">{{author}}</a> 时间<time class="pubdate">{{ publish_date }}</time></p>
                     </footer>
 
                 </section>
@@ -50,7 +50,9 @@
         </main>
         <!-- end main -->
 
+        <!-- ==== START SIDEBAR ==== -->
         {{>sidebar}}
+        <!-- end sidebar -->
     </div>
     <!-- end container -->
 

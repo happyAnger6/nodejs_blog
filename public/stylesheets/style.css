@@ -131,7 +131,7 @@ a:hover {
 }
 
 .more:after {
-    content: ' 禄';
+    content: '';
 }
 
 img {
@@ -143,7 +143,7 @@ img {
 ------------------------------------------ */
 .page {
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
 }
 
 .container {
@@ -153,13 +153,13 @@ img {
 
 main {
     float: left;
-    width: 600px;
+    width: 62.5%;
 }
 
 .sidebar {
     float: right;
     margin-top: 1.875em;
-    width: 300px;
+    width: 31.25%;
 }
 
 
@@ -382,4 +382,8 @@ footer[role="contentinfo"] {
  */
 .clearfix {
     *zoom: 1;
+}
+
+.blog-post-title {
+    text-align: center;
 }

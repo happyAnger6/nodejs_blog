@@ -8,6 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <link href="/third_part/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/third_part/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,6 +16,34 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="/third_part/jquery/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('.like-post').click(function(){
+                var likes = $('#post_likes').text();
+                var title = $('.blog-post-title').text();
+                $.post('/post/addLikes', {
+                    title:title,
+                    likes:likes
+                },function(data, textStatus){
+                  $("#post_likes").html(Number(likes) + 1);
+                }, "json");
+          });
+
+            $('.unlike-post').click(function(){
+                var unlikes = $('#post_unlikes').text();
+                var title = $('.blog-post-title').text();
+                $.post('/post/subLikes', {
+                    title:title,
+                    likes:unlikes
+                },function(data, textStatus){
+                    $("#post_unlikes").html(Number(unlikes) + 1);
+                }, "json");
+            });
+
+        });
+    </script>
 </head>
 <body>
 <div class="page">
@@ -26,6 +55,10 @@
             <div class="col-sm-8 blog-main">
                 <div class="blog-post">
                     <h2 class="blog-post-title">{{ post.title }}</h2>
+                    <div class="col-sm-4">
+                            <i class="fa fa-heart" id="post_likes">{{post.likes}}</i><span class="input-group-btn"><button class="btn btn-default like-post"> 喜 欢</button></span>
+                        <i class="fa fa-diamond" id="post_unlikes">{{post.un_likes}}</i><span class="input-group-btn"><button class="btn btn-default unlike-post"> 不 喜 欢</button> </span>
+                    </div>
                     <p class="blog-post-meta">{{ post.publish_date}} 发表于 {{ post.author }}</p>
                     <p>{{{ post.content }}}</p>
                 </div>

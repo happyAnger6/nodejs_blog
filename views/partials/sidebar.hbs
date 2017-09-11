@@ -1,0 +1,31 @@
+<!-- ==== START SIDEBAR ==== -->
+<div class="sidebar">
+    <article class="about">
+        <h2>关 于 我</h2>
+
+        <img src="/images/about-me.jpg" width="270" height="162" alt="" />
+
+        <p>大家好，我叫张晓安，江湖人称安哥6. 是一名程序猿，关注网络通信，云计算与容器技术。平时热爱跑步，足球。</p>
+    </article>
+
+    <aside class="mod">
+        <h2>最 受 欢 迎</h2>
+
+        <ul class="links">
+            {{#each populars}}
+                <li><a href="/post/details/{{title}}" class="more">{{title}}</a></li>
+            {{/each}}
+        </ul>
+    </aside>
+
+    <aside class="mod">
+        <h2>最 近 更 新</h2>
+
+        <ul class="links">
+            {{#each recents}}
+                <li><a href="/post/details/{{title}}" class="more">{{title}}</a></li>
+            {{/each}}
+        </ul>
+    </aside>
+</div>
+<!-- end sidebar -->
