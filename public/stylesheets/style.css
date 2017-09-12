@@ -162,6 +162,12 @@ main {
     width: 31.25%;
 }
 
+.about-me {
+    margin: 0.5em 0.5em;
+    max-width: 250px;
+    width: 80%;
+    height: 40%
+}
 
 /* MASTHEAD
 ------------------------------------------ */
