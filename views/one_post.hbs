@@ -55,10 +55,9 @@
             <div class="col-sm-8 blog-main">
                 <div class="blog-post">
                     <h2 class="blog-post-title">{{ post.title }}</h2>
-                    <div class="col-sm-4">
                             <i class="fa fa-heart" id="post_likes">{{post.likes}}</i><span class="input-group-btn"><button class="btn btn-default like-post"> 喜 欢</button></span>
                         <i class="fa fa-diamond" id="post_unlikes">{{post.un_likes}}</i><span class="input-group-btn"><button class="btn btn-default unlike-post"> 不 喜 欢</button> </span>
-                    </div>
+                    <br/>
                     <p class="blog-post-meta">{{ post.publish_date}} 发表于 {{ post.author }}</p>
                     <p>{{{ post.content }}}</p>
                 </div>

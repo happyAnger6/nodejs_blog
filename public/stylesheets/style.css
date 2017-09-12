@@ -262,6 +262,9 @@ h1 {
     margin-bottom: .4125em;
 }
 
+.post {
+    margin-left: 1em;
+}
 .post-photo {
     float: left;
     margin-bottom: 2px;
