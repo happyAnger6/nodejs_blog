@@ -5,10 +5,6 @@ var hbs = require('hbs');
 var Post = require('../models/post');
 var post = require('../lib/post');
 
-var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/mydb');
-
-
 hbs.registerHelper('popularPosts', function(counts){
   Post
       .find({})
