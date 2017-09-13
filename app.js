@@ -9,8 +9,10 @@ var hbs = require('hbs');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var posts = require('./routes/post');
+var admin = require('./routes/admin');
 
 hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/partials/admin');
 
 hbs.registerHelper('truncate', function(content){
   var end = content.length;
@@ -21,7 +23,7 @@ hbs.registerHelper('truncate', function(content){
 });
 
 var app = express();
-app.listen(80);
+//app.listen(80);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,6 +40,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/post', posts);
+app.use('/admin', admin);
+
+var mongoose = require('mongoose');
+var db = mongoose.connect('mongodb://localhost/mydb');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

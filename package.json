@@ -10,6 +10,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "handlebars": "^4.0.10",
     "hbs": "~4.0.1",
     "mongoose": "^4.11.10",
     "morgan": "~1.8.1",
