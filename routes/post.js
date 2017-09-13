@@ -4,6 +4,7 @@ var hbs = require('hbs');
 
 var Post = require('../models/post');
 var post = require('../lib/post');
+var tag = require('../lib/tag');
 
 hbs.registerHelper('popularPosts', function(counts){
   Post
@@ -57,7 +58,23 @@ hbs.registerHelper('postPageList', function(start, pages){
 });
 
 router.get('/postedit', function(req, res, next){
-    res.render('postedit');
+    tag.get_all_tags(function(err, tags){
+        console.log("tags", tags);
+        res.render('postedit',{tags:tags});
+    })
+});
+
+router.get('/postedit/:title', function(req, res, next){
+    var title = req.params.title;
+    tag.get_all_tags(function(err, tags){
+        Post
+            .findOne({title:title})
+            .select('title content')
+            .exec(function(err, post){
+                if (err) throw err;
+                res.render('postedit',{tags:tags, post:post});
+            });
+    })
 });
 
 router.get('/list/:page', function(req, res, next){

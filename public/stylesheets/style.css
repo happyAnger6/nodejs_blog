@@ -162,6 +162,11 @@ main {
     width: 31.25%;
 }
 
+.about-me {
+    margin: 0.5em 0.5em;
+    width: 80%;
+    height: 40%
+}
 
 /* MASTHEAD
 ------------------------------------------ */
@@ -256,6 +261,9 @@ h1 {
     margin-bottom: .4125em;
 }
 
+.post {
+    margin-left: 1em;
+}
 .post-photo {
     float: left;
     margin-bottom: 2px;

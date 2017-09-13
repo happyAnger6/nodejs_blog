@@ -6,4 +6,4 @@ var Category = new Scheme({
     parent: String
 });
 
-module.exports = mongoose.models('Category', Category);
+module.exports = mongoose.model('Category', Category);
