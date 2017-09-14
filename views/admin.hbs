@@ -24,7 +24,12 @@
     {{# each lists}}
         <a class="btn btn-default" href="{{url}}" role="button">{{name}}</a>
     {{/each}}
-    { {#> pagename } }
+    {{# if tags }}
+        {{> tags }}
+    {{/if}}
+    {{# if posts }}
+        {{> posts }}
+    {{/if}}
     {{> footer }}
 </div> <!-- end page -->
 <script src="/third_part/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

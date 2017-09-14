@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var hbs = require('hbs');
+
+var Post = require('../models/post');
 var Category = require('../models/category');
 var Tag = require('../models/tag');
 
@@ -11,12 +13,25 @@ hbs.registerHelper('getpage', function(pagename){
     return page;
 });
 
+var admin_header = "<li><a href='/admin'>管理页面</a></li>";
 router.get('/', function(req, res, next){
-    res.render('admin',{lists:[{name:"标签管理", url:"/admin/tags"},{name:"类别管理", url:"/admin/category"}]});
+    res.render('admin',{lists:[{name:"标签管理", url:"/admin/tags"},{name:"类别管理", url:"/admin/category"},{
+        name:"文章管理", url:"/admin/posts"}
+    ],
+ header:admin_header});
 });
 
 router.get('/tags', function(req, res, next){
-    res.render('admin',{pagename:'tags'});
+    res.render('admin',{tags:'tags', header:admin_header});
+});
+
+router.get('/posts', function(req, res, next){
+    Post
+        .find({})
+        .select('title')
+        .exec(function(err, posts){
+            res.render('admin',{posts:posts, header:admin_header});
+        });
 });
 
 router.post('/tags', function(req, res, next){

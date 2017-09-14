@@ -22,6 +22,10 @@ hbs.registerHelper('truncate', function(content){
   return content.substring(0, end);
 });
 
+hbs.registerHelper('addHeader', function(header){
+  return header;
+});
+
 var app = express();
 app.listen(80);
 
