@@ -14,11 +14,13 @@ hbs.registerHelper('getpage', function(pagename){
 });
 
 var admin_header = "<li><a href='/admin'>管理页面</a></li>";
+var admin_lists = [{name:"标签管理", url:"/admin/tags"},
+                    {name:"类别管理", url:"/admin/category"},
+                    {name:"文章管理", url:"/admin/posts"}
+                   ];
+
 router.get('/', function(req, res, next){
-    res.render('admin',{lists:[{name:"标签管理", url:"/admin/tags"},{name:"类别管理", url:"/admin/category"},{
-        name:"文章管理", url:"/admin/posts"}
-    ],
- header:admin_header});
+    res.render('admin',{lists:admin_lists, header:admin_header});
 });
 
 router.get('/tags', function(req, res, next){
