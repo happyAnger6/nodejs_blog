@@ -105,8 +105,7 @@ router.get('/details/:title', function(req, res, next){
     Post.findOne({'title': title})
         .exec(function(err, post){
           if (err) throw err;
-     //     console.log("detail: " + post);
-          res.render('one_post',{post:post});
+          res.render('one_post',{post:post, tags:post.tags});
         });
 });
 
@@ -146,6 +145,7 @@ router.post('/postedit', function(req, res, next){
     var title = req.body.title;
     var content = req.body.content;
     var new_url = '/post/details/' + title;
+    var tags = req.body.tag;
     //console.log("parms:" + req.params + "body:title:" + title + "content:" + content);
     var query = Post.findOne({'title': title});
     query.exec(function(err, post){
@@ -153,13 +153,14 @@ router.post('/postedit', function(req, res, next){
         var date = new Date();
         var now = date.toUTCString();
         if (null == post) {
-            var new_post = new Post({title:title, content:content, publish_date:now, date:date.getTime()});
+            var new_post = new Post({title:title, content:content, publish_date:now, date:date.getTime(), tags:tags});
             new_post.save(function(err){
                 if (err) throw err;
             });
         }else {
             post.content = content;
             post.last_modify_date = date;
+            post.tags = tags;
             post.save(function(err){
                 if (err) throw err;
             });
