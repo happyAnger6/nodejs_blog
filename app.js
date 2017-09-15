@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var posts = require('./routes/post');
 var admin = require('./routes/admin');
+var tags = require('./routes/tag');
 
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerPartials(__dirname + '/views/partials/admin');
@@ -45,6 +46,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/post', posts);
 app.use('/admin', admin);
+app.use('/tags', tags);
 
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://localhost/mydb');

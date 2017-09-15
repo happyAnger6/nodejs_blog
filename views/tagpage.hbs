@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page">
+    <!-- ==== START MASTHEAD ==== -->
+    {{> header }}
+    <!-- end masthead -->
+
+    <div class="container clearfix">
+        <div class="tag">
+            <a href="/tags/{{tagname}}">标签: {{ tagname }}</a>
+        </div>
+        <!-- ==== START MAIN ==== -->
+        <main role="main">
+            {{#each posts }}
+                <section class="post">
+                    <h1>{{ title }}</h1>
+
+                    <div class="post-blurb">
+                        <p>{{{ truncate content }}} </p>
+                    </div>
+
+                    <div class="row">
+                        <a href="/post/details/{{title}}">阅 读 全 文</a>
+                    </div>
+
+                    <footer class="footer">
+                        <p class="post-footer">发表于<a href="#">{{author}}</a> 时间<time class="pubdate">{{ publish_date }}</time></p>
+                    </footer>
+
+                </section>
+            {{/each}}
+
+            <nav role="navigation">
+                <ol class="pagination">
+                    {{{ tagPageList start pages tagname}}}
+                </ol>
+            </nav>
+        </main>
+        <!-- end main -->
+
+        <!-- ==== START SIDEBAR ==== -->
+        {{>sidebar}}
+        <!-- end sidebar -->
+    </div>
+    <!-- end container -->
+
+    {{> footer }}
+</div> <!-- end page -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/third_part/jquery/jquery-3.2.1.min.js"></script>
+</body>
+</html>

@@ -59,7 +59,7 @@ hbs.registerHelper('postPageList', function(start, pages){
 
 router.get('/postedit', function(req, res, next){
     tag.get_all_tags(function(err, tags){
-        console.log("tags", tags);
+        //console.log("tags", tags);
         res.render('postedit',{tags:tags});
     })
 });
