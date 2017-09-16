@@ -7,6 +7,7 @@ var Post = new Scheme({
     publish_date: String,
     last_modify_date: String,
     tags: [String],
+    comments: [String],
     date: Number,
     likes: {type:Number, default:0},
     un_likes: {type:Number, default:0}
